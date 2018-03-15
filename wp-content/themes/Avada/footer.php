@@ -2,13 +2,18 @@
 	.formulario{
 		position:fixed;
 		top: 0px;
-		padding: 50px;
+		padding: 20px;
 		width:100%;
 		height : 100%;
 		display: none;
+		overflow-y: auto;
 	}
 	.formulario .fusion-layout-column{
 
+	}
+	.text-formulario{
+		width: calc(100% - 18px) !important;
+    	margin-left: 10px;
 	}
 </style>
 <div id="formulario" class="formulario">
@@ -25,8 +30,8 @@
                   <input type="hidden" name="_wpcf7_container_post" value="611">
                </div>
                <div style="color: #fff;">
-                  <div class="fusion-one-third fusion-layout-column fusion-spacing-yes"><label>Your Name <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span></label></div>
-                  <div class="fusion-one-third fusion-layout-column fusion-spacing-yes"><label>Email <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"></span></label></div>
+                  <div class="fusion-one-third fusion-layout-column fusion-spacing-yes"><label>Your Name <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" id="nome-formulario" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span></label></div>
+                  <div class="fusion-one-third fusion-layout-column fusion-spacing-yes"><label>Email <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" id="email-formulario" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"></span></label></div>
                   <div class="fusion-one-third fusion-layout-column fusion-column-last fusion-spacing-yes"><label>Subject<span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span></label></div>
                   <div class="fusion-one-half fusion-layout-column fusion-spacing-yes">
                      <label>
@@ -108,8 +113,9 @@
                         </span>
                      </label>
                   </div>
-                  <p><label>Your Message <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span></label></p>
-                  <p><input type="submit" value="Enviar" class="wpcf7-form-control wpcf7-submit">
+                  <p><label style="margin-left:  10px;">Your Message <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" id="nome-descricao" class="wpcf7-form-control wpcf7-textarea text-formulario" aria-invalid="false"></textarea></span></label></p>
+                  <p><input type="submit"  style="margin-left: 10px;" value="Enviar" class="wpcf7-form-control wpcf7-submit">
+				  <a id="enviar-formulario"  style="margin-left: 10px;" value="Enviar Whats" class="wpcf7-form-control wpcf7-submit"></a>
                   <div class="fusion-slider-loading"></div>
                   </p>
                </div>
@@ -196,7 +202,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 			jQuery(document).ready(function() {	
 				jQuery("a[title='formulario']").click(() =>{
 					jQuery("#formulario").show();
+					
 				});
+
+				jQuery('#enviar-formulario').click(() =>{
+					let email jQuery('#email-formulario').val();
+					alert(email);
+				})
 			});
 		</script>
 	</body>
