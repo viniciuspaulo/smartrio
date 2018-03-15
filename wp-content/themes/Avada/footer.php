@@ -13,8 +13,9 @@
 	}
 	.formulario .fusion-layout-column{
 		background: #283873;
+		padding: 10px;
 	}
-	.text-formulario{
+	.wpcf7-form-control.wpcf7-textarea.text-formulario{
 		width: calc(100% - 18px) !important;
     	margin-left: 10px;
 	}
