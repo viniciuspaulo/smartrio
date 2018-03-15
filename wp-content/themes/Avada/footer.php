@@ -1,15 +1,18 @@
 <style>
 	.formulario{
-		position:fixed;
+		position: fixed;
 		top: 0px;
+		left: 0px;
 		padding: 20px;
-		width:100%;
-		height : 100%;
+		width: 100%;
+		height: 100%;
 		display: none;
 		overflow-y: auto;
+		z-index: 999999;
+		background: #443e3e87;
 	}
 	.formulario .fusion-layout-column{
-
+		background: #283873;
 	}
 	.text-formulario{
 		width: calc(100% - 18px) !important;
