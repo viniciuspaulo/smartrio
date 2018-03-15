@@ -165,9 +165,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 		padding: 50px;
 		width:100%;
 		height : 100%;
+		display: none;
 	}
 	.formulario .fusion-layout-column{
-		
+
 	}
 </style>
 <div id="formulario" class="formulario">

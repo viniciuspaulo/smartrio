@@ -72,7 +72,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			jQuery(document).ready(function() {	
 				jQuery("a[title='formulario']").click(() =>{
-					alert(3);
+					jQuery("#formulario").show();
 				});
 			});
 		</script>
