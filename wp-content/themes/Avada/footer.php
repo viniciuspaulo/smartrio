@@ -68,5 +68,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<a class="fusion-one-page-text-link fusion-page-load-link"></a>
 
 		<?php wp_footer(); ?>
+		<script type="text/javascript">
+
+			alert(1);
+			$(".button-custom.button-6").click(() =>{
+				alert(2);
+			});
+		</script>
 	</body>
 </html>
