@@ -69,19 +69,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<?php wp_footer(); ?>
 		<script type="text/javascript">
-			setTimeout(() => {
-				
-				jQuery(document).ready(function() {	
-					$(".button-custom.button-6").click(() =>{
-						alert(2);
-					});
 
-					$("a[title='formulario']").click(() =>{
-						alert(3);
-					});
+			jQuery(document).ready(function() {	
+				jQuery(".button-custom.button-6").click(() =>{
+					alert(2);
 				});
 
-			}, 2000);
+				jQuery("a[title='formulario']").click(() =>{
+					alert(3);
+				});
+			});
 		</script>
 	</body>
 </html>
