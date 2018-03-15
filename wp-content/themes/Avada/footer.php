@@ -70,9 +70,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php wp_footer(); ?>
 		<script type="text/javascript">
 
-			alert(1);
-			$(".button-custom.button-6").click(() =>{
-				alert(2);
+			jQuery(document).ready(function() {	
+				$(".button-custom.button-6").click(() =>{
+					alert(2);
+				});
+
+				$("a[title='formulario']").click(() =>{
+					alert(3);
+				});
 			});
 		</script>
 	</body>
