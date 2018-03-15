@@ -157,12 +157,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<?php wp_reset_postdata(); ?>
 </section>
 <?php do_action( 'avada_after_content' ); ?>
-
-<script>
-	$(".button-custom.button-6").click(() =>{
-		alert(1)
-	});
-</script>
 <?php
 get_footer();
 
