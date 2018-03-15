@@ -206,7 +206,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				});
 
 				jQuery('#enviar-formulario').click(() =>{
-					let email jQuery('#email-formulario').val();
+					let email = jQuery('#email-formulario').val();
 					alert(email);
 				})
 			});
