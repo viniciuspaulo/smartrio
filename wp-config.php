@@ -92,3 +92,6 @@ if ( !defined('ABSPATH') )
 
 /** Configura as variáveis e arquivos do WordPress. */
 require_once(ABSPATH . 'wp-settings.php');
+
+/** Aumenta a memória do PHP. */	
+defined ('WP_MEMORY_LIMIT', '256M');
